@@ -1,0 +1,19 @@
+[package]
+name = "bn-vb6"
+version = "0.1.0"
+edition = "2024"
+authors = ["Johann Kempter <admin@binflip.rs>"]
+rust-version = "1.85"
+description = "Binary Ninja plugin for VB6 P-Code analysis"
+license = "Apache-2.0"
+repository = "https://github.com/BinFlip/bn-vb6"
+readme = "README.md"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+binaryninja = { git = "https://github.com/Vector35/binaryninja-api", branch = "dev" }
+binaryninjacore-sys = { git = "https://github.com/Vector35/binaryninja-api", branch = "dev" }
+visualbasic = "0.1.0"
